@@ -1,0 +1,26 @@
+ul{
+  padding-right: 0;
+  position: relative;
+  right: -1px;
+
+}
+li{
+  outline: none;
+}
+.main-wrap{
+  min-height: 400px;
+  height: 80vh
+
+;
+}
+.active-link{
+  background-color: #A0A0A0;
+  border-radius: 0;
+}
+.bg-main{
+  background-color: #A0A0A0;
+}
+i{
+  width: 25px;
+}
+

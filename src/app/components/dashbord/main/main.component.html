@@ -1,0 +1,22 @@
+
+<app-header></app-header>
+<div class="container d-flex justify-content-start main-wrap">
+
+  <div class=" border-right col-3">
+    <div class="row">
+      <ul  class="list-group col-12 mt-3"  >
+        <app-list-item> </app-list-item>
+        <li  class="list-group-item border-0 " (click)="logOut()">
+          <i class="fas fa-sign-out-alt"></i>
+          Log Out
+        </li>
+      </ul>
+
+  </div>
+  </div>
+  <div class="col-9  bg-main p-1 ">
+
+      <router-outlet></router-outlet>
+  </div>
+</div>
+

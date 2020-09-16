@@ -1,0 +1,46 @@
+ form{
+   border: none;
+   box-shadow: none;
+ }
+ .form-btn{
+   border: 0;
+   border-radius: 3px ;
+   color: #ffffff;
+   background-color: aqua;
+
+
+
+   padding: 2px 15px;
+
+ }
+ .account-icon::after{
+   content: url("./icons8-invisible-24.png");
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   right: 20px;
+   top: 3px
+ }
+ .input-wrap{
+   min-width: 80px;
+   width: 30%;
+   max-width: 190px;
+ }
+.password-input{
+
+
+
+   width: 100%;
+  padding: 5px 35px 5px 10px;
+
+}
+.alert{
+  padding: 0.25rem 1.25rem !important;
+  margin: 15px !important;
+}
+i{
+  padding-top: 10px;
+}
+.alert-span{
+  padding-top: 5px;
+}

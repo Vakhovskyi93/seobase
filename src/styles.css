@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.border-style{
+
+  border: 1px solid rgb(171, 173, 176);
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+label{
+  min-width: 100px;
+}
+input{
+  font-size: 12px;
+}
+
+.comp-wrap{
+  height: 95%;
+  max-height: 500px;
+}

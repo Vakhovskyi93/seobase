@@ -1,0 +1,68 @@
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center login-comp">
+
+
+
+  <img src="logo_white.svg" class="logo">
+
+  <div class="login-wrap flex-column align-items-center ">
+    <flash-messages></flash-messages>
+
+    <h2 class="text-center">Log In</h2>
+    <form action=""  #form='ngForm' name="myform" novalidate (ngSubmit)="onSubmit()">
+
+        <div class="email d-flex flex-column">
+          <div>
+            <label class="label">Email</label>
+          </div>
+
+          <input type="email"
+                 class="border-style "
+                 placeholder="Enter your email"
+                 id="email"
+                 [(ngModel)]="email"
+                 name="email"
+                 #formEmail="ngModel"
+                 required pattern="[a-z.A-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}"
+
+          >
+          <span [hidden]="formEmail.valid || formEmail.untouched" class=" error-message">
+             Looks like not valid Email
+
+
+          </span>
+
+
+        </div>
+        <div class="password flex-column ">
+          <div class="d-flex label justify-content-between">
+            <label>Password</label>
+            <a class="forgotPasswordLink" routerLink="forgotpassword"> Forgot Password?</a>
+          </div>
+
+          <input type="password"
+                 class="border-style password-input    "
+                 placeholder="Enter password"
+                 id="password"
+                 [(ngModel)]="password"
+                 #formPass="ngModel"
+                 name="password"
+                 required pattern="[a-zA-Z0-9]{10,26}"
+          >
+
+          <span [hidden]="formPass.valid || formPass.untouched" class=" error-message">
+            Password must contain at least 10 digits
+           </span>
+        </div>
+        <div  >
+          <button class="btn-style btn-login " > Log In </button>
+        </div>
+    </form>
+
+
+    <p class="singUpItem">Don`t have an account? <a routerLink="singup"> Sing Up</a></p>
+
+  </div>
+
+
+
+</div>

@@ -117,8 +117,16 @@
               "devServerTarget": "seobase:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "seobase"
+    }
+  },
+  "defaultProject": "seobase",
+  "cli": {
+    "analytics": "83276099-9b36-4305-b53c-dc89ae3fcef0"
+  }
 }

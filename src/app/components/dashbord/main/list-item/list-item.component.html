@@ -1,0 +1,11 @@
+<li  class="list-group-item border-0"
+     routerLink="{{item.link}}"
+
+     *ngFor='let item of list '
+     (click)="onSelectItem($event.target)"
+>
+
+      <i class={{item.img}}></i>
+
+      {{item.name}}
+</li>

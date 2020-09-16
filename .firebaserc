@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "seobase-25ac6": {
+      "hosting": {
+        "seobase": [
+          "seobase-25ac6"
+        ]
+      }
+    }
+  }
+}

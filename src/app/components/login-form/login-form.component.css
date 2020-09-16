@@ -1,0 +1,99 @@
+.login-comp{
+  min-height: 550px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+}
+.login-comp::after{
+  content: '';
+  position: absolute;
+
+  width: 300%;
+  height: 300%;
+  background-image: url('logo-symbol-white.svg');
+  background-color: rgba(23,23,23,.5);
+  transform: rotate(20deg);
+  background-size: 170px 140px;
+ }
+.login-comp::before{
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  background: rgb(38,164,213);
+  background: linear-gradient(10deg, rgba(38,164,213,1) 7%, rgba(14,210,214,0.4) 100%);
+  z-index: 2;
+}
+h2{
+  font-weight: 700;
+  z-index: 3;
+}
+.login-wrap{
+  background-color: #ffffff;
+
+  border-radius: 3px;
+  padding: 50px 20px 20px;
+  width: 300px;
+  z-index: 6;
+}
+.login-comp input{
+  width: 100%;
+  padding: 5px 45px 5px 10px;
+  font-size: 14px;
+
+}
+.label{
+  font-size: 16px;
+  padding: 10px 0 0 0 ;
+
+  color: black;
+
+}
+label{
+  font-weight: 600;
+  margin-bottom: 0px !important;
+}
+.btn-style{
+  border-radius: 3px;
+  border: none;
+
+}
+.btn-login{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 15px 0 ;
+  background-color: aqua;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+
+
+}
+.singUpItem{
+  font-size: 14px;
+  text-align: center;
+}
+.singUpItem a{
+  color: dodgerblue;
+}
+.forgotPasswordLink{
+  color: lightslategray;
+}
+img{
+  z-index: 333;
+  width: 100px;
+  height: 100px;
+}
+flash-messages{
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+
+  z-index: 44;
+  width: 300px;
+}
+ .error-message{
+   font-size: 10px;
+   color: red;
+ }

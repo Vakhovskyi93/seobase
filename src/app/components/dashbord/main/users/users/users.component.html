@@ -1,0 +1,34 @@
+<div class="container pt-3   comp-wrap">
+  <div class="   d-flex justify-content-between align-items-end">
+    <h5  >User</h5>
+    <button class="border-style pt-1 pr-3 pl-3 pb-1">Setings</button>
+  </div>
+  <div class=" item_body mt-2 border-style comp-wrap">
+
+    <table class="table table-sm m-3" *ngIf="user">
+
+      <tbody>
+      <tr>
+        <td>Email</td>
+        <td>{{user.email}}</td>
+
+
+      </tr>
+      <tr>
+
+        <td>Verified</td>
+        <td>{{user.emailVerified}}</td>
+
+      </tr>
+      <tr>
+
+        <td >Phone</td>
+        <td>{{user.phoneNumber}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+
+  </div>
+</div>
